@@ -13,7 +13,7 @@ class Auto:
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo=modelo
         self.precio=precio
-        self.asientos=asientos
+        self.asientos=list(asientos)
         self.marca=marca
         self.motor=motor
         self.registro= registro
@@ -38,14 +38,14 @@ class Auto:
 
 class Motor:
     pass
-    def __int__(self,numeroCilindros, tipo, registro):
+    def __int__ (self,numeroCilindros, tipo, registro):
         self.tipo= tipo
         self.numeroCilindros= numeroCilindros
         self.registro=registro
 
-    def cambiarRegistro(self,registro):
+    def cambiarRegistro (self, registro):
         self.registro=registro
 
-    def asignarTipo(self,tipo):
+    def asignarTipo (self, tipo):
         if tipo=="gasolina" or tipo== "electrico":
             self.tipo = tipo
