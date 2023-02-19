@@ -1,4 +1,5 @@
 class Asiento:
+    pass
     def __init__(self,color,precio,registro):
         self.color=color
         self.precio=precio
@@ -8,6 +9,7 @@ class Asiento:
             self.color=color
 
 class Auto:
+    pass
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
         self.modelo=modelo
         self.precio=precio
@@ -35,9 +37,10 @@ class Auto:
         return AutoRe
 
 class Motor:
+    pass
     def __int__(self,numeroCilindros, tipo, registro):
-        self.numeroCilindros= numeroCilindros
         self.tipo= tipo
+        self.numeroCilindros= numeroCilindros
         self.registro=registro
 
     def cambiarRegistro(self,registro):
@@ -45,4 +48,4 @@ class Motor:
 
     def asignarTipo(self,tipo):
         if tipo=="gasolina" or tipo== "electrico":
-            self.tipo=tipo
+            self.tipo = tipo
