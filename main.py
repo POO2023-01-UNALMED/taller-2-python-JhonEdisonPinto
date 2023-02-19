@@ -38,7 +38,7 @@ class Auto:
 
 class Motor:
     pass
-    def __int__ (self,numeroCilindros, tipo, registro):
+    def __init__ (self,numeroCilindros, tipo, registro):
         self.tipo= tipo
         self.numeroCilindros= numeroCilindros
         self.registro=registro
